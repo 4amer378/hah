@@ -1,0 +1,255 @@
+body{
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@keyframes animate{
+  0%{
+    transform: translateY(200px) rotateX(-30deg) rotateY(0deg);
+  }
+  100%{
+    transform: translateY(200px) rotateX(-30deg) rotateY(360deg);
+  }
+}
+.cube{
+  position: relative;
+  transform-style: preserve-3d;
+  transform: rotate3d(-1,1,0, 30deg) translateY(200px);
+  width: 100px;
+  height: 100px;
+  color: #fff;
+  font-size: 30px;
+  text-align: center;
+  line-height: 100px;
+  animation: 4s animate ease infinite;
+}
+.front{
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 1px solid #fff;
+  width: 100px;
+  height: 100px;
+  transform: translateZ(50px);
+}
+.back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 1px solid #fff;
+  width: 100px;
+  height: 100px;
+  transform: translateZ(-50px);
+}
+.right {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 1px solid #fff;
+  width: 100px;
+  height: 100px;
+  transform: translateX(50px) rotateY(90deg);
+}
+.left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 1px solid #fff;
+  width: 100px;
+  height: 100px;
+  transform: translateX(-50px) rotateY(-90deg);
+}
+.top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 1px solid #fff;
+  width: 100px;
+  height: 100px;
+  transform: translateY(50px) rotateX(-90deg);
+}
+.bottom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 1px solid #fff;
+  width: 100px;
+  height: 100px;
+  transform: translateY(-50px) rotateX(90deg);
+  transform-style: preserve-3d;
+}
+.body{
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform-style: preserve-3d;
+  transform: translateZ(-150px);
+  width: 100px;
+  height: 100px;
+  color: #fff;
+  font-size: 30px;
+  text-align: center;
+  line-height: 100px;
+}
+.front1{
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 1px solid #fff;
+  width: 100px;
+  height: 75px;
+  transform: translateZ(50px);
+}
+.back1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 1px solid #fff;
+  width: 100px;
+  height: 75px;
+  transform: translateZ(-100px);
+}
+.right1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 1px solid #fff;
+  width: 200px;
+  height: 50px;
+  transform: translateZ(-50px) translateY(25px) translateX(0px) rotateY(-90deg);
+}
+.left1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 1px solid #fff;
+  width: 200px;
+  height: 50px;
+  transform: translateZ(-50px) translateY(25px) translateX(-100px) rotateY(-90deg);
+}
+.top1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 1px solid #fff;
+  width: 100px;
+  height: 200px;
+  transform: translateZ(-50px) translateY(-75px) rotateX(-90deg);
+}
+.bottom1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 1px solid #fff;
+  width: 100px;
+  height: 200px;
+  transform: translateZ(-50px) translateY(-25px) rotateX(90deg);
+}
+.RightHand{
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform-style: preserve-3d;
+  transform: translateZ(50px) translateX(-100px) rotateX(135deg);
+  transform-origin: right,75%,0;
+  width: 100px;
+  height: 100px;
+  color: #fff;
+  font-size: 15px;
+  text-align: center;
+  line-height: 100px;
+}
+.LeftHand{
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform-style: preserve-3d;
+  transform: translateX(150px) translateX(-100px) translateZ(0px);
+  width: 100px;
+  height: 100px;
+  color: #fff;
+  font-size: 15px;
+  text-align: center;
+  line-height: 100px;
+}
+.RightFoot{
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform-style: preserve-3d;
+  transform: translateX(-50px) translateY(0px) translateZ(-200px);
+  width: 100px;
+  height: 100px;
+  color: #fff;
+  font-size: 15px;
+  text-align: center;
+  line-height: 100px;
+}
+.LeftFoot{
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform-style: preserve-3d;
+  transform: translateX(0px) translateY(0px) translateZ(-200px);
+  width: 100px;
+  height: 100px;
+  color: #fff;
+  font-size: 15px;
+  text-align: center;
+  line-height: 100px;
+}
+.front2{
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 1px solid #fff;
+  width: 50px;
+  height: 50px;
+  transform: translateX(50px) translateY(25px) translateZ(50px);
+}
+.back2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 1px solid #fff;
+  width: 50px;
+  height: 50px;
+  transform: translateX(50px) translateY(25px) translateZ(-150px);
+}
+.right2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 1px solid #fff;
+  width: 200px;
+  height: 50px;
+  transform: translateZ(-50px) translateY(25px) translateX(0px) rotateY(-90deg);
+}
+.left2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 1px solid #fff;
+  width: 200px;
+  height: 50px;
+  transform: translateZ(-50px) translateY(25px) translateX(-50px) rotateY(-90deg);
+}
+.top2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 1px solid #fff;
+  width: 50px;
+  height: 200px;
+  transform: translateX(50px) translateZ(-50px) translateY(-75px) rotateX(-90deg);
+}
+.bottom2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 1px solid #fff;
+  width: 50px;
+  height: 200px;
+  transform: translateX(50px) translateZ(-50px) translateY(-25px) rotateX(90deg);
+}
